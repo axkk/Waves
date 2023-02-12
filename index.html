@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Waves</title>
+  <!-- bootstraplink -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+  <!-- google fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- bootstrap scripts to be added -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <!-- fontawesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
+</head>
+
+<body>
+
+  <section id="home" class="home" >
+
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home"><span class="text-info-emphasis"><i class="fas fa-umbrella-beach"></i>WAVES</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#checkavail">Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#newsletter">Newsletter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- home carousel -->
+
+    <div id="homecar" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <img src="images/beach.avif" class="d-block w-100" alt="beachimage">
+          <div class="carousel-caption">
+            <h5>its your turn to relax</h5>
+            <p>Escape the noise without breaking the bank</p>
+            <p><a class="btn btn-light mt-3" href="#checkavail" role="button">Book Now</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/home.jpg" class="d-block w-100" alt="home">
+          <div class="carousel-caption">
+            <h5>at a beautiful place</h5>
+            <p>We prioritize technology and security along with comfort</p>
+            <p><a class="btn btn-light mt-3" href="#checkavail" role="button">Book Now</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/scuba.jpg" class="d-block w-100" alt="scuba">
+          <div class="carousel-caption">
+            <h5>and have some fun</h5>
+            <p>Don't wait until tomorrow, discover your adventure now</p>
+            <p><a class="btn btn-light mt-3" href="#checkavail" role="button">Book Now</a></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#homecar" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#homecar" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+    
+    </div>
+    
+  </section>
+
+
+
+
+<!-- check availability RESERVATION -->
+<section id="checkavail" class="checkavail">
+
+  <h2 class="text-center"><i class="fas fa-bookmark text-info-emphasis"></i> RESERVATION</h2>
+  <div class="container">
+
+    <form action="#" class="bg-light border p-4 m-auto">
+      <div class="row mt-2">
+        <div class="col col-lg-6 ">
+          <label for= "checkin" class= "form-label labeltxt">Check-in</label>
+          <input type= "date" class= "form-control" id= "checkin" required>
+        </div>
+        <div class="col col-lg-6 ">
+          <label for= "checkout" class= "form-label labeltxt">Check-out</label>
+          <input type= "date" class= "form-control" id= "checkout">
+        </div>
+        <div class="col-lg-4 mt-3">
+          <label for= "room" class="form-label labeltxt">No. of Rooms</label>
+          <input type= "number" class="form-control" id="room" min="1" required>
+        </div>
+        <div class="col-lg-4 mt-3">
+          <label for= "adult" class="form-label labeltxt">No. of Adults</label>
+          <input type= "number" class="form-control" id="adult" min="1" required>
+        </div>
+        <div class="col-lg-4 mt-3">
+          <label for= "child" class="form-label labeltxt">No. of Children</label>
+          <input type= "number" class="form-control" id="child" min="0" required>
+        </div>
+        <div class="col text-center mt-4">
+          <button class="btn btn-lg bg-dark text-info">Check availability</button>
+        </div>
+      </div>
+    </form>  
+  </div>
+</section>
+
+
+
+  <!-- Services -->
+
+<section id="services" class="services bg-tertiary portfolio section-padding">
+
+<h2 class="text-center servh2">OUR <span class="text-info-emphasis">SERVICES</span></h2>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card text-center bg-white">
+          <div class="img-area">
+            <img src="images/accomodation.jpg" class="card-img-top img-fluid serviceimg" alt="spa">
+          </div>
+        <div class="card-body p-1 pb-2 bg-light text-dark">
+        <h3 class="card-title">Accomodations</h3>
+        <p class="lead">We provide clean homes for your perfect getaway</p>
+        <button class="btn bg-dark text-info">Learn More</button>
+      </div>
+      </div>
+    </div>  
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card text-center bg-white">
+          <div class="img-area">
+            <img src="images/spa.jpg" class="card-img-top img-fluid serviceimg" alt="spa">
+          </div>
+        <div class="card-body p-1 pb-2 bg-light text-dark">
+        <h3 class="card-title">In-house spa</h3>
+        <p class="lead">Go from tired to revitalized by our spa treatment</p>
+        <button class="btn bg-dark text-info">Learn More</button>
+      </div>
+      </div>
+    </div>  
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card text-center bg-white">
+          <div class="img-area">
+            <img src="images/watersport.jpg" class="card-img-top img-fluid serviceimg" alt="spa">
+          </div>
+        <div class="card-body p-1 pb-2 bg-light text-dark">
+        <h3 class="card-title">Watersports</h3>
+        <p class="lead">Surfing, diving you name it! Its safe, its fun!</p>
+        <button class="btn bg-dark text-info">Learn More</button>
+      </div>
+      </div>
+    </div>  
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card text-center bg-white">
+          <div class="img-area">
+            <img src="images/diversecuisine.jpg" class="card-img-top img-fluid serviceimg" alt="spa">
+          </div>
+        <div class="card-body p-1 pb-2 bg-light text-dark">
+        <h3 class="card-title">Diverse Cuisine</h3>
+        <p class="lead">Taste the world at our place by our experienced chefs </p>
+        <button class="btn bg-dark text-info">Learn More</button>
+      </div>
+      </div>
+    </div>  
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card text-center bg-white">
+          <div class="img-area">
+            <img src="images/beachimg.jpg" class="card-img-top img-fluid serviceimg" alt="spa">
+          </div>
+        <div class="card-body p-1 pb-2 bg-light text-dark">
+        <h3 class="card-title">Sunbaths</h3>
+        <p class="lead">A perfect opportunity to bask in the sun</p>
+        <button class="btn bg-dark text-info">Learn More</button>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card text-center bg-white">
+          <div class="img-area">
+            <img src="images/relax.jpg" class="card-img-top img-fluid serviceimg" alt="spa">
+          </div>
+        <div class="card-body p-1 pb-2 bg-light text-dark">
+        <h3 class="card-title">Enjoy</h3>
+        <p class="lead">Last but never the least, relax here away from all your worries</p>
+        <button class="btn bg-dark text-info">Learn More</button>
+      </div>
+      </div>
+    </div>
+</div>
+</section>
+
+
+<!-- about -->
+<section id="about" class="about">
+  
+  <h2 class="text-center mb-4">ABOUT <span class="text-info-emphasis">US</span></h2>
+  
+  <div class="container bg-light p-4 border">
+    <div class="row ">
+      <div class="col-12 col-lg-4 col-md-12">
+        <div class="maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30750.694541621022!2d73.73617989199866!3d15.546876204739434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfea0148f4ed2b%3A0xcb592fad5d257d17!2sCalangute%20Beach!5e0!3m2!1sen!2sin!4v1676191484374!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+      <div class="col-lg-8 col-md-12 col-12 ps-lg-6 ps-md-5 mt-md-4 d-flex align-items-center">
+        <div class="about-text ms-3">
+          <h3>We provide <span class="text-info-emphasis">Comfort in Class</span></h3>
+          <p class="indent pt-1">
+              Founded in 1996 in India, Waves has grown from a local travel destination to one of India's most sought after destination. Since then, we have sucessfully catered around 30k guests and are confident that the numbers will be ever-growing. 
+          </p>
+          <p class="indent"> Our mission is to be the leading and most comfortable tourist destination that sets the standard for professionalism and reliability to its customers.</p>
+          <p><b>Sea you soon!</b></p>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<!-- Testimonials -->
+
+  <section id="testimonials" class="testimonials ">
+    <h2 class="text-center mt-5 mb-4"><span class="text-info-emphasis">TRAVELLERS</span> SAID</h2>
+   
+      <div class="card bg-light mb-4 m-auto rounded-pill rounded-end" style="width: 75%;" >
+        <div class="row">
+          <div class="col-md-4 d-flex align-items-center">
+            <img src="images/aish.jpg" class="img-fluid testimg" alt="lady">
+          </div>
+          <div class="col-md-8 d-flex align-items-center">
+            <div class="card-body">
+              <h3 class="card-title"><i class="fas fa-3x fa-quote-left"></i> Calm</h3>
+              <p class="card-text">Waves proved to be a perfect getaway from my hectic schedules. It was very calm and I enjoyed my stayed here.</p>
+              <p class="card-text"><b>~ Aishwarya</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        <div class="card bg-light text-end mb-4 m-auto rounded-pill rounded-start" style="width: 75%;">
+          <div class="row"> 
+            <div class="col-md-8 d-flex align-items-center">
+              <div class="card-body">
+                <h3 class="card-title">Friendly<i class="fas fa-3x fa-quote-right"></i></h3>
+                <p class="card-text">The houses were very pretty and the food was to die for. Thank you so much Waves for such a wonderful experience.</p>
+                <p class="card-text"><b>~ Rahul</b></p>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+              <img src="images/srk.jpg" class="img-fluid testimg" alt="man">
+            </div>
+          </div>
+        </div>
+  
+    
+        <div class="card bg-light m-auto rounded-pill rounded-end" style="width: 75%;" >
+          <div class="row">
+            <div class="col-md-4 d-flex align-items-center">
+              <img src="images/pritey.jpg" class="img-fluid testimg" alt="lady">
+            </div>
+            <div class="col-md-8 d-flex align-items-center">
+              <div class="card-body">
+                <h3 class="card-title"><i class="fas fa-3x fa-quote-left"></i> Beautiful</h3>
+                <p class="card-text">Waves was awesome! Even though I'd been there 3x before, I explored so much that I missed on my previous trips.</p>
+                <p class="card-text"><b>~ Pritey</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+<!-- newsletter -->
+
+  <section id="newsletter">
+    <h2 class="text-center res mt-5">SUBSCRIBE TO OUR <span class="text-info-emphasis">NEWSLETTER</span></h2>
+    
+    <div class="container">
+  
+      <form action="#" class="bg-light border p-4 m-auto">
+        <div class="row mt-2">
+          <div class="col col-lg-9 ms-5">
+            <input type="email" class="form-control" id="email" placeholder="Enter your email here">
+          </div>
+          <div class="col col-lg-2">
+            <button class="btn bg-dark text-info">Submit</button>
+          </div>
+          <!-- <label for="email" class="form-label">Email address</label> -->
+          
+        </form>  
+      </div>
+
+  </section>
+
+<!-- footer -->
+  <footer id="footer" class="text-center text-dark mb-4">
+    <a href="https://twitter.com/" class="contact-links text-dark"><i class="fab fa-2x m-2 fa-twitter footicon"></i></a>
+    <a href="https://www.facebook.com/" class="contact-links text-dark"><i class="fab fa-2x m-2 fa-facebook footicon"></i></a>
+    <a href="https://www.instagram.com/" class="contact-links text-dark"><i class="fab fa-2x m-2 fa-instagram footicon"></i></a>
+    <a href="https://www.linkedin.com/in/ankitaasinghh/" class="contact-links text-dark"><i class="fab fa-2x m-2 fa-linkedin footicon"></i></a>
+    <p>© Created by Ankita Singh | All Rights Reserved</p>
+  </footer>
+
+
+</body>
+
+</html>
